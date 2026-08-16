@@ -47,7 +47,7 @@ Pattern problems are one of the best ways to build a strong foundation in **loop
 
 ---
 
-##  Example Patterns
+##  Example Patterns many are there 
 
 ### 1. Square Pattern
 
