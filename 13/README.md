@@ -1,15 +1,21 @@
-# Pattern 13: Floyd's Triangle
+In this pattern, we create a number triangle where consecutive numbers are printed in sequence starting from 1.
 
-## Intuition
-Consecutive numbers starting from `1` are printed in sequence across rows in a right-angled triangular form.
+1.Initialize a counter num = 1.
+2.Run an outer loop (i) from 1 to N for rows.
+3.For each row, run an inner loop (j) from 1 to i.
+4.Print the current value of num and increment it.
+5.After each row, move to the next line.
 
-## Approach
-1. Initialize a counter `num = 1`.
-2. Run an outer loop `i` from `1` to `N` for rows.
-3. For each row, run an inner loop `j` from `1` to `i`.
-4. Print the current value of `num` with a space and increment `num += 1`.
-5. After each row, move to the next line.
+Time Complexity: O(N²), because nested loops iterate through triangular elements.
 
-## Complexity
-- **Time Complexity:** `O(N²)` — Total numbers printed = `N*(N+1)/2`.
-- **Space Complexity:** `O(1)` — Constant extra space.
+Space Complexity: O(1), as only loop variables and a counter are used.
+
+
+
+
+
+
+
+
+
+
