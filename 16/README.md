@@ -1,21 +1,14 @@
-In this pattern, we create a letter triangle where each row repeats the same letter i times, with letters increasing for each row.
+# Pattern 16: Alpha-Ramp Pattern
 
-1.Run an outer loop (i) from 0 to N-1 for rows.
-2.Get the character corresponding to the i-th letter (A, B, C, ...).
-3.Run an inner loop (j) from 0 to i and print the same character.
-4.After each row, move to the next line.
+## Intuition
+Each row repeats the same letter `i + 1` times, with the letter advancing for each subsequent row (`A`, `B B`, `C C C`, ...).
 
-Time Complexity: O(N²), because nested loops iterate through triangular elements.
+## Approach
+1. Run an outer loop `i` from `0` to `N-1` for rows.
+2. Determine character: `ch = chr(ord('A') + i)`.
+3. Run an inner loop `j` from `0` to `i` and print `ch` followed by a space.
+4. After each row, move to the next line.
 
-Space Complexity: O(1), as only loop variables are used.
-
-
-
-
-
-
-
-
-
-
-
+## Complexity
+- **Time Complexity:** `O(N²)` — Total letters printed = `N*(N+1)/2`.
+- **Space Complexity:** `O(1)` — Constant extra space.
