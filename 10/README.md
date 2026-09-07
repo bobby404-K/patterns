@@ -1,16 +1,44 @@
-# Pattern 10: Half Diamond Star Pattern
+In this pattern, we create a diamond shape using stars. The number of stars increases up to the middle and then decreases symmetrically.
 
-## Intuition
-In this pattern, we create a right-facing half diamond (or rotated triangle) of stars. The number of stars increases up to the middle row `N` and then decreases symmetrically back to 1.
+1.Run a loop from i = 1 to 2*N-1.
+2.Calculate the number of stars: if i <= N, stars = i; else stars = 2*N - i.
+3.Print the calculated number of stars in each row.
+4.Move to the next line after each row.
 
-## Approach
-1. Run a loop from `i = 1` to `2 * N - 1`.
-2. Calculate the number of stars for row `i`:
-   - If `i <= N`: `stars = i`
-   - Else: `stars = 2 * N - i`
-3. Print `stars` stars in the current row.
-4. Move to the next line after each row.
+Time Complexity: O(N²), because we print approximately N² total characters.
 
-## Complexity
-- **Time Complexity:** `O(N²)` — Loop runs `2*N - 1` times printing up to `N` stars.
-- **Space Complexity:** `O(1)` — Constant extra space.
+Space Complexity: O(1), as only loop variables are used.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
