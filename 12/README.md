@@ -1,22 +1,16 @@
-In this pattern, we create a mirrored number triangle. Each row contains numbers increasing from 1, followed by spaces, then numbers decreasing back to 1.
+# Pattern 12: Number Crown Pattern
 
-1.Run an outer loop (i) from 1 to N for rows.
-2.For each row, print numbers from 1 to i.
-3.Print (2 \* (N - i)) spaces in the middle.
-4.Print numbers from i back down to 1.
-5.After each row, adjust spacing and move to the next line.
+## Intuition
+Each row contains numbers increasing from `1` to `i`, followed by a gap of `2 * (N - i)` spaces, and then numbers decreasing from `i` back down to `1`.
 
-Time Complexity: O(N²), because nested loops iterate through O(N²) elements.
+## Approach
+1. Initialize `spaces = 2 * (N - 1)`.
+2. Run an outer loop `i` from `1` to `N` for rows.
+3. Print numbers from `1` to `i`.
+4. Print `spaces` spaces in the middle.
+5. Print numbers from `i` down to `1`.
+6. Decrement `spaces -= 2` and move to the next line.
 
-Space Complexity: O(1), as only loop variables are used.
-
-
-
-
-
-
-
-
-
-
-
+## Complexity
+- **Time Complexity:** `O(N²)` — Nested loops print `2 * N` elements per row.
+- **Space Complexity:** `O(1)` — Constant extra space.

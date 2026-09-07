@@ -1,28 +1,14 @@
-In this pattern, we create a binary alternating triangle. Each row contains alternating 0s and 1s, starting with 1 if the row is even, and 0 if the row is odd.
+# Pattern 11: Binary Alternating Triangle
 
-1.Run an outer loop (i) from 0 to N-1 for rows.
-2.For each row, determine the starting value: 1 if i is even, 0 if i is odd.
-3.Run an inner loop (j) from 0 to i, printing the current value and toggling between 0 and 1.
-4.After each row, move to the next line.
+## Intuition
+Each row contains alternating `0`s and `1`s. Even-indexed rows (0, 2, 4...) start with `1`, and odd-indexed rows (1, 3, 5...) start with `0`.
 
-Time Complexity: O(N²), because nested loops iterate through triangular elements.
+## Approach
+1. Run an outer loop `i` from `0` to `N-1` for rows.
+2. For each row, determine starting value: `start = 1 if i % 2 == 0 else 0`.
+3. Run an inner loop `j` from `0` to `i`, print `start`, and toggle `start = 1 - start`.
+4. After each row, move to the next line.
 
-
-
-Space Complexity: O(1), as only loop variables are used.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Complexity
+- **Time Complexity:** `O(N²)` — Nested loops iterate through triangular elements.
+- **Space Complexity:** `O(1)` — Constant extra space.

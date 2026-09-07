@@ -1,126 +1,159 @@
-#  Pattern Programs in DSA — 22 Patterns
+# 🌟 Pattern Programs in DSA — Complete 22 Patterns
 
-A curated collection of **22 classic pattern-printing programs**, commonly asked in coding interviews and an excellent starting point for anyone beginning their **Data Structures & Algorithms (DSA)** journey.
+A comprehensive, curated collection of **22 classic pattern-printing problems** implemented in Python. These problems are standard warmup questions in **Data Structures & Algorithms (DSA)** interviews and coding rounds.
 
-Pattern problems are one of the best ways to build a strong foundation in **loops, nested iteration, and logical thinking** — core skills that carry over into more advanced DSA topics like recursion, backtracking, and dynamic programming.
-
----
-
-##  Why This Repository?
-
--  Beginner-friendly — no prior DSA experience required
--  Covers the most frequently asked pattern problems in interviews
--  Each pattern includes **intuition, approach, and complexity analysis**
--  Helps build intuition for **nested loops and iteration control**
--  A great warm-up before diving into arrays, strings, and recursion
+Pattern problems build a rock-solid mental model for **nested iteration, index arithmetic, 2D coordinate calculations, and conditional logic** — foundational skills for matrices, recursion, backtracking, and dynamic programming.
 
 ---
 
-##  Patterns Included
+## 🚀 Why This Repository?
 
-| # | Pattern Name | Difficulty |
-|---|---------------------------|------------|
-| 1 | Square Pattern | Easy |
-| 2 | Right-Angled Triangle (Numbers) | Easy |
-| 3 | Right-Angled Triangle (Stars) | Easy |
-| 4 | Inverted Right-Angled Triangle | Easy |
-| 5 | Pyramid Pattern | Easy |
-| 6 | Inverted Pyramid Pattern | Easy |
-| 7 | Diamond Pattern | Medium |
-| 8 | Hollow Square Pattern | Medium |
-| 9 | Hollow Triangle Pattern | Medium |
-| 10 | Number Triangle (Increasing) | Easy |
-| 11 | Number Triangle (Reverse) | Easy |
-| 12 | Floyd's Triangle | Easy |
-| 13 | Pascal's Triangle | Medium |
-| 14 | Butterfly Pattern | Medium |
-| 15 | Zig-Zag Pattern | Medium |
-| 16 | Alphabet Triangle | Easy |
-| 17 | Alphabet Pyramid | Medium |
-| 18 | Hollow Diamond Pattern | Medium |
-| 19 | Number Pyramid (Repeated Row Number) | Medium |
-| 20 | Palindromic Number Pattern | Hard |
-| 21 | Spiral Number Pattern | Hard |
-| 22 | Sandglass / Hourglass Pattern | Hard |
-
->  Update the table above with the exact names/order of your 22 implementations.
+- 🎯 **Complete Striver A2Z Pattern Series**: Covers all 22 fundamental pattern problems.
+- 📂 **Zero-Padded Folder Structure (`01`–`22`)**: Eliminates lexicographical sorting bugs in GitHub and IDE file trees.
+- 💡 **Intuition & Complexity Analysis**: Every pattern folder includes a dedicated `README.md` breaking down the intuition, step-by-step approach, time complexity, and space complexity.
+- 🖼️ **Visual Reference**: Includes diagrams/output previews for quick visual recall.
 
 ---
 
-##  Example Patterns many are there 
+## 📋 Patterns Catalog
 
-### 1. Square Pattern
+| # | Folder | Pattern Name | Difficulty | Visual Preview |
+|:---:|:---:|:---|:---:|:---|
+| 01 | [`01`](./01) | **Rectangular / Square Star Pattern** | `Easy` | `* * * *`<br>`* * * *`<br>`* * * *`<br>`* * * *` |
+| 02 | [`02`](./02) | **Right-Angled Star Triangle** | `Easy` | `*`<br>`* *`<br>`* * *`<br>`* * * *` |
+| 03 | [`03`](./03) | **Right-Angled Number Triangle** | `Easy` | `1`<br>`1 2`<br>`1 2 3`<br>`1 2 3 4` |
+| 04 | [`04`](./04) | **Repeated Row Number Triangle** | `Easy` | `1`<br>`2 2`<br>`3 3 3`<br>`4 4 4 4` |
+| 05 | [`05`](./05) | **Inverted Right-Angled Star Triangle** | `Easy` | `* * * *`<br>`* * *`<br>`* *`<br>`*` |
+| 06 | [`06`](./06) | **Inverted Right-Angled Number Triangle** | `Easy` | `1 2 3 4`<br>`1 2 3`<br>`1 2`<br>`1` |
+| 07 | [`07`](./07) | **Star Pyramid** | `Easy` | `   *   `<br>`  ***  `<br>` ***** `<br>`*******` |
+| 08 | [`08`](./08) | **Inverted Star Pyramid** | `Easy` | `*******`<br>` ***** `<br>`  ***  `<br>`   *   ` |
+| 09 | [`09`](./09) | **Diamond Star Pattern** | `Medium` | `   *   `<br>`  ***  `<br>` ***** `<br>`*******`<br>`*******`<br>` ***** `<br>`  ***  `<br>`   *   ` |
+| 10 | [`10`](./10) | **Half Diamond Star Pattern** | `Medium` | `*`<br>`**`<br>`***`<br>`****`<br>`***`<br>`**`<br>`*` |
+| 11 | [`11`](./11) | **Binary Alternating Triangle** | `Easy` | `1`<br>`0 1`<br>`1 0 1`<br>`0 1 0 1` |
+| 12 | [`12`](./12) | **Number Crown / Mirrored Triangle** | `Medium` | `1      1`<br>`12    21`<br>`123  321`<br>`12344321` |
+| 13 | [`13`](./13) | **Floyd's Triangle** | `Easy` | `1`<br>`2 3`<br>`4 5 6`<br>`7 8 9 10` |
+| 14 | [`14`](./14) | **Increasing Letter Triangle** | `Easy` | `A`<br>`A B`<br>`A B C`<br>`A B C D` |
+| 15 | [`15`](./15) | **Inverted Letter Triangle** | `Easy` | `A B C D`<br>`A B C`<br>`A B`<br>`A` |
+| 16 | [`16`](./16) | **Alpha-Ramp Pattern** | `Easy` | `A`<br>`B B`<br>`C C C`<br>`D D D D` |
+| 17 | [`17`](./17) | **Alpha-Hill Pattern** | `Medium` | `   A   `<br>`  ABA  `<br>` ABCBA `<br>`ABCDCBA` |
+| 18 | [`18`](./18) | **Alpha-Triangle Pattern** | `Medium` | `D`<br>`C D`<br>`B C D`<br>`A B C D` |
+| 19 | [`19`](./19) | **Symmetric Void Pattern** | `Hard` | `********`<br>`***  ***`<br>`**    **`<br>`*      *`<br>`*      *`<br>`**    **`<br>`***  ***`<br>`********` |
+| 20 | [`20`](./20) | **Butterfly Star Pattern** | `Hard` | `*      *`<br>`**    **`<br>`***  ***`<br>`********`<br>`***  ***`<br>`**    **`<br>`*      *` |
+| 21 | [`21`](./21) | **Hollow Square Star Pattern** | `Medium` | `****`<br>`*  *`<br>`*  *`<br>`****` |
+| 22 | [`22`](./22) | **Concentric Square Number Pattern** | `Hard` | `4 4 4 4 4 4 4`<br>`4 3 3 3 3 3 4`<br>`4 3 2 2 2 3 4`<br>`4 3 2 1 2 3 4`<br>`4 3 2 2 2 3 4`<br>`4 3 3 3 3 3 4`<br>`4 4 4 4 4 4 4` |
+
+---
+
+## 🔍 Pattern Walkthrough Examples
+
+### Example 1: Square Star Pattern (Pattern 01)
 
 **Intuition:** Since the number of rows and columns are equal, two nested loops suffice — the outer loop for rows and the inner loop for printing `N` stars per row.
 
-**Approach:**
-1. Take an integer `N` as input to define the size of the square.
-2. Use a loop from `0` to `N-1` to represent each row.
-3. Inside that loop, use another loop from `0` to `N-1` to print stars in the current row.
-4. Print `"* "` during each inner loop iteration to form the row.
-5. After each inner loop completes, move to the next line.
+```python
+def pattern1(n):
+    for i in range(n):
+        for j in range(n):
+            print("*", end=" ")
+        print()
+```
 
-**Complexity:**
-- Time: `O(N²)`
-- Space: `O(1)`
-
----
-
-### 2. Right-Angled Triangle (Numbers)
-
-**Intuition:** Each row contains numbers starting from `1` up to the row number — row 1 has `1`, row 2 has `1 2`, row 3 has `1 2 3`, and so on until `N`.
-
-**Approach:**
-1. Use an outer loop `i` from `1` to `N` for rows.
-2. For each row, use an inner loop `j` from `1` to `i` to print numbers.
-3. Each row prints numbers starting from `1` up to the current row index.
-4. After printing each row, move to the next line.
-
-**Complexity:**
-- Time: `O(N²)`, since the outer loop runs `N` times and the inner loop runs up to `i` times for each row.
-- Space: `O(1)`, since only loop variables are used.
+- **Time Complexity:** `O(N²)`
+- **Space Complexity:** `O(1)`
 
 ---
 
-##  Getting Started
+### Example 2: Right-Angled Star Triangle (Pattern 02)
+
+**Intuition:** Each row `i` (0-indexed) prints exactly `i + 1` stars.
+
+```python
+def pattern2(n):
+    for i in range(n):
+        for j in range(i + 1):
+            print("*", end=" ")
+        print()
+```
+
+- **Time Complexity:** `O(N²)`
+- **Space Complexity:** `O(1)`
+
+---
+
+### Example 3: Star Pyramid (Pattern 07)
+
+**Intuition:** For row `i` (0-indexed), print `N - i - 1` leading spaces, `2 * i + 1` stars, and `N - i - 1` trailing spaces.
+
+```python
+def pattern7(n):
+    for i in range(n):
+        print(" " * (n - i - 1) + "*" * (2 * i + 1) + " " * (n - i - 1))
+```
+
+- **Time Complexity:** `O(N²)`
+- **Space Complexity:** `O(1)`
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/<your-username>/patterns.git
+cd patterns
+```
+
+### 2. Run any pattern
+To run any pattern solution, navigate into its folder or execute it with Python:
 
 ```bash
-# Clone the repository
-git clone <your-repo-url>
+# Run Pattern 01 (Square Star Pattern)
+python 01/one.py
 
-# Navigate into the project
-cd pattern-programs
+# Run Pattern 08 (Inverted Star Pyramid)
+python 08/eight.py
 
-# Run any pattern file
-python patternX.py
+# Run Pattern 22 (Concentric Square Number Pattern)
+python 22/twentytwo.py
 ```
 
 ---
 
-##  Who Is This For?
+## 📁 Repository Structure
 
-This repository is ideal for:
-- Students starting their **DSA/coding interview prep**
-- Beginners learning **loops and nested iteration**
-- Anyone who wants daily practice with simple, visual problems before moving to arrays, strings, and recursion
-
----
-
-##  Contributing
-
-Contributions are welcome! If you'd like to add a new pattern or improve an existing solution:
-1. Fork the repository
-2. Create a new branch (`git checkout -b add-new-pattern`)
-3. Commit your changes
-4. Open a pull request
-
----
-
-##  License
-
-This project is open-source and available under the [MIT License](LICENSE).
+```text
+patterns/
+├── 01/             # Pattern 01: Rectangular / Square Star Pattern
+│   ├── one.py
+│   ├── one.png
+│   └── README.md
+├── 02/             # Pattern 02: Right-Angled Star Triangle
+│   ├── two.py
+│   ├── two.png
+│   └── README.md
+...
+├── 22/             # Pattern 22: Concentric Square Number Pattern
+│   ├── twentytwo.py
+│   ├── twentytwo.png
+│   └── README.md
+└── README.md       # Main repository documentation & index
+```
 
 ---
 
- If you found this helpful for your DSA journey, consider giving the repository a star:)
- 
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/NewPattern`)
+3. Commit your Changes (`git commit -m 'Add new pattern solution'`)
+4. Push to the Branch (`git push origin feature/NewPattern`)
+5. Open a Pull Request
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+⭐ If this repository helped you in your DSA journey, don't forget to give it a star!

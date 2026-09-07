@@ -1,18 +1,15 @@
-In this pattern, we create a square outline (hollow square). The border is filled with stars while the interior is empty.
+# Pattern 21: Hollow Square Star Pattern
 
-1.Run an outer loop (i) from 0 to N-1 for rows.
-2.For each row, run an inner loop (j) from 0 to N-1 for columns.
-3.Print a star if the element is on the border (first/last row or first/last column).
-4.Otherwise, print a space.
-5.After each row, move to the next line.
+## Intuition
+An `N x N` square outline where the outer boundary is filled with stars and the interior is empty (filled with spaces).
 
-Time Complexity: O(N²), because nested loops iterate through N² elements.
+## Approach
+1. Run an outer loop `i` from `0` to `N-1` for rows.
+2. For each row, run an inner loop `j` from `0` to `N-1` for columns.
+3. Print `*` if the position is on the border (`i == 0` or `j == 0` or `i == N - 1` or `j == N - 1`).
+4. Otherwise, print a space ` `.
+5. After each row, move to the next line.
 
-Space Complexity: O(1),
-as only loop variables are used.
-
-
-
-
-
-
+## Complexity
+- **Time Complexity:** `O(N²)` — Checks all `N * N` positions in the grid.
+- **Space Complexity:** `O(1)` — Constant extra space.

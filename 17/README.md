@@ -1,20 +1,17 @@
-In this pattern, we create a diamond shape using letters. Letters start from A and increase towards the middle, then decrease symmetrically.
+# Pattern 17: Alpha-Hill Pattern
 
-1.Run an outer loop (i) from 0 to N-1 for rows.
-2.Print (N - i - 1) leading spaces for centering.
-3.For each row, start with letter A and increment up to the midpoint, then decrement.
-4.Print each letter in sequence.
-5.After each row, move to the next line.
+## Intuition
+A centered pyramid formed with letters. Letters start from `A`, increase towards the midpoint, and then decrease symmetrically back to `A`.
 
-Time Complexity: O(N²), because nested loops iterate through O(N²) elements.
+## Approach
+1. Run an outer loop `i` from `0` to `N-1` for rows.
+2. Print `N - i - 1` leading spaces for centering.
+3. Start with `ch = ord('A')` and midpoint breakpoint `(2 * i + 1) // 2`.
+4. For column `j` from `1` to `2 * i + 1`:
+   - Print `chr(ch)`
+   - If `j <= breakpoint`, `ch += 1`, else `ch -= 1`.
+5. After each row, move to the next line.
 
-
-Space Complexity: O(1), as only loop variables are used.
-
-
-
-
-
-
-
-
+## Complexity
+- **Time Complexity:** `O(N²)` — Nested loops iterate through pyramid elements.
+- **Space Complexity:** `O(1)` — Constant extra space.
