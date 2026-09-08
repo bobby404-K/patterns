@@ -90,7 +90,7 @@ patterns/
 │   ├── README.md
 │   ├── two.png
 │   └── two.py
-...
+...#all folders==all patterns
 ├── 22/
 │   ├── README.md
 │   ├── twentytwo.png
